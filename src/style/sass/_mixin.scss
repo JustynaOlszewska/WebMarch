@@ -1,0 +1,9 @@
+@mixin size {
+    width: 100vw;
+    height: 100vh;
+}
+@mixin position($position: absolute, $top: null, $left: null) {
+    position: $position;
+    top: $top;
+    left: $left;
+}

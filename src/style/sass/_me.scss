@@ -1,0 +1,49 @@
+@import 'variables';
+.me {
+    text-align: center;
+    color: $yellow;
+    
+ & .hMe {
+     font-size: 3rem;
+     @media (max-width: 769px) {
+      font-size: 1rem;
+  
+      }
+ }
+     & .formMe {
+          min-height: 100px;
+          &__textarea {
+              width: 60%;
+              height: 20vw;
+              display: block;
+            margin: 10px auto;
+            background-color: $yellow;
+            color: #3726A6;
+            font-size: 2rem;
+            text-align: center;
+            @media (max-width: 769px) {
+              font-size: 1.3rem;
+          
+              }
+          }
+          &__button {
+           margin: {
+             top: 20px;
+          bottom: 30px;
+           }
+           background-color:#3726A6;
+           color: $yellow;
+           border: none;
+           padding: 20px;
+           font-size: 2rem;
+           cursor: pointer;
+           @media (max-width: 769px) {
+            font-size: 1.5rem;
+        
+            }
+        }
+      }
+   
+  
+    
+}
