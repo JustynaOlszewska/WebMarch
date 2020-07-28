@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/WebMarch/static/css/main.85d9f727.chunk.css",
-    "main.js": "/WebMarch/static/js/main.6a8cde49.chunk.js",
-    "main.js.map": "/WebMarch/static/js/main.6a8cde49.chunk.js.map",
+    "main.css": "/WebMarch/static/css/main.3d621c21.chunk.css",
+    "main.js": "/WebMarch/static/js/main.30e51ad9.chunk.js",
+    "main.js.map": "/WebMarch/static/js/main.30e51ad9.chunk.js.map",
     "runtime-main.js": "/WebMarch/static/js/runtime-main.80774a1b.js",
     "runtime-main.js.map": "/WebMarch/static/js/runtime-main.80774a1b.js.map",
-    "static/js/2.740eb332.chunk.js": "/WebMarch/static/js/2.740eb332.chunk.js",
-    "static/js/2.740eb332.chunk.js.map": "/WebMarch/static/js/2.740eb332.chunk.js.map",
+    "static/js/2.c45a9145.chunk.js": "/WebMarch/static/js/2.c45a9145.chunk.js",
+    "static/js/2.c45a9145.chunk.js.map": "/WebMarch/static/js/2.c45a9145.chunk.js.map",
     "index.html": "/WebMarch/index.html",
-    "precache-manifest.5c74cf68064fc53759c1f61c4efa1967.js": "/WebMarch/precache-manifest.5c74cf68064fc53759c1f61c4efa1967.js",
+    "precache-manifest.169581311af6e2bbbde52e69317ef008.js": "/WebMarch/precache-manifest.169581311af6e2bbbde52e69317ef008.js",
     "service-worker.js": "/WebMarch/service-worker.js",
-    "static/css/main.85d9f727.chunk.css.map": "/WebMarch/static/css/main.85d9f727.chunk.css.map",
-    "static/js/2.740eb332.chunk.js.LICENSE.txt": "/WebMarch/static/js/2.740eb332.chunk.js.LICENSE.txt"
+    "static/css/main.3d621c21.chunk.css.map": "/WebMarch/static/css/main.3d621c21.chunk.css.map",
+    "static/js/2.c45a9145.chunk.js.LICENSE.txt": "/WebMarch/static/js/2.c45a9145.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.80774a1b.js",
-    "static/js/2.740eb332.chunk.js",
-    "static/css/main.85d9f727.chunk.css",
-    "static/js/main.6a8cde49.chunk.js"
+    "static/js/2.c45a9145.chunk.js",
+    "static/css/main.3d621c21.chunk.css",
+    "static/js/main.30e51ad9.chunk.js"
   ]
 }
