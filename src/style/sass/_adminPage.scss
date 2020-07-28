@@ -1,0 +1,21 @@
+@import 'variables';
+
+.listUsers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+
+    justify-content: center;
+    margin: 0 auto;
+
+    .dataUsers {
+        text-align: center;
+        border: 2px solid $blueDark;
+        }
+
+        .dataUsers__name {
+            font-size: 1.2rem;
+            color: $white;
+        }
+
+}

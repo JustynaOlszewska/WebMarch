@@ -1,13 +1,16 @@
+@import 'variables';
+
+
 .headDescription {
     text-align: center;
     margin: 10px 20px 40px 20px;
-    color: rgb(218, 168, 168);
+    color: $white;
 
 }
 .textDescription {
     text-align: justify;
     margin: 10px 30px 40px 30px;
-    color: white;
+    color: $white;
     font-size: 1.5rem;
     @media (max-width: 769px) {
       font-size: 1rem;
@@ -17,7 +20,7 @@
 .linkDescription {
     display: block;
     text-align: center;
-    color: rgb(218, 168, 168);
+    color: $white;
     margin-bottom: 60px;
     @media (max-width: 769px) {
         font-size: 1rem;

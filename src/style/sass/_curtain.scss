@@ -24,17 +24,18 @@ body {
             overflow-x: hidden;
 
             &.one {
-                background-color: rgb(41, 22, 163);
+                background-color: $blue;
                 z-index: 3;
             }
 
             &.two {
-                background-color: rgb(184, 6, 6);
+                background-color: $red;
                 z-index: 2;
             }
 
             &.three {
                 background-color: $yellow;
+
                 z-index: 1;
             }
 

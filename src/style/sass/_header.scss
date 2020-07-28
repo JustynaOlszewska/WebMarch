@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Special+Elite|Work+Sans&display=swap');
 @import 'variables';
 @import 'mixin';
+
+
+
 .header {
   margin: {
     top: 30px;
   }
+
   display: flex;
   @include size;
+
   & .logo {
     width: 30vw;
 
     &__text {
       color: white;
+
       font: {
         size: 4rem;
       }
+
       margin: {
         left: 15%;
       }
@@ -23,6 +30,7 @@
         font: {
           size: 2rem;
         }
+
         margin: 0 5% 5% 5%;
       }
 
@@ -31,11 +39,13 @@
           size: 6rem;
         }
       }
+
     }
 
     @media (max-width: 769px) {
       width: 100vw;
       height: 20%;
+
       margin: {
         bottom: 15px;
       }
@@ -44,44 +54,55 @@
 
   & .navigation {
     width: 55vw;
+
     margin: {
       top: 30px;
     }
+
     & .list {
       list: {
         style: none;
       }
+
       display: flex;
+
       flex: {
         direction: column;
       }
+
       align: {
         content: space-between;
       }
+
       height: 90%;
       padding: 0 1% 0 1%;
-    
+
       &__element {
         height: 25%;
+
         text: {
           align: center;
         }
+
         .list__a {
           text: {
             decoration: none;
           }
+
           padding: 25px 50px 25px 50px;
           color: $blue;
+
           font: {
             family: 'Special Elite', cursive;
-          weight: 800;
-         size: 2rem;
+            weight: 800;
+            size: 2rem;
           }
 
           @media (max-width: 769px) {
             font: {
               size: 1rem;
             }
+
             padding: 15px 35px 15px 35px;
           }
 
@@ -97,7 +118,9 @@
           background: {
             color: $red;
           }
+
           color: $yellow;
+
         }
 
         &:nth-child(1) {
@@ -113,7 +136,9 @@
         &:nth-child(2) .list__a {
           background: {
             color: $yellow;
+
           }
+          color: $blueDark;
         }
 
         &:nth-child(2) {
@@ -130,6 +155,7 @@
           background: {
             color: $red;
           }
+
           color: $yellow;
         }
 
@@ -144,7 +170,7 @@
         }
 
         &:nth-child(4) .list__a {
-          background-color: rgb(7, 7, 131);
+          background-color: $blueDark;
 
         }
 
@@ -183,25 +209,27 @@
       &:hover {
         transform: rotate(360deg);
       }
-    
+
     }
 
     @media (max-width: 769px) {
       display: none;
 
     }
-   
+
   }
 
-  @media (max-width: 769px){
+  @media (max-width: 769px) {
     flex-direction: column;
     overflow-x: hidden;
     height: 80%;
+
     margin: {
       top: 10px;
-    bottom: 10px;
+      bottom: 10px;
     }
   }
+
   @media (orientation: landscape) {
     height: 130%;
   }

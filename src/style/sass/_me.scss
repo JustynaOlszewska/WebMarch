@@ -1,7 +1,7 @@
 @import 'variables';
 .me {
     text-align: center;
-    color: $yellow;
+    color: $red;
     
  & .hMe {
      font-size: 3rem;
@@ -17,8 +17,8 @@
               height: 20vw;
               display: block;
             margin: 10px auto;
-            background-color: $yellow;
-            color: #3726A6;
+            background-color: $back;
+            color: $red;
             font-size: 2rem;
             text-align: center;
             @media (max-width: 769px) {
@@ -31,8 +31,8 @@
              top: 20px;
           bottom: 30px;
            }
-           background-color:#3726A6;
-           color: $yellow;
+           background-color:$blueDark;
+           color: white;
            border: none;
            padding: 20px;
            font-size: 2rem;
