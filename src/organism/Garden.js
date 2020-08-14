@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import higherOrderComponent from "../HOC/higherOrderComponent"
+import { vegetables } from "../utility"
 
-
-const vegetables = ["carrot", "cucumber", "potato"];
 const Garden = () => {
        const newVegetables = vegetables.map((vegetable,index)=> {
               return(
@@ -21,4 +21,4 @@ const Garden = () => {
      );
 }
  
-export default Garden;
+export default higherOrderComponent(Garden);
