@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { PATH_ROUTER } from "../constants";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+
 const Header = ({ sentence, listInHead, element }) => {
     return (
         <header className="header">
