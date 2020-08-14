@@ -1,2 +1,0 @@
-(this.webpackJsonpmarch=this.webpackJsonpmarch||[]).push([[4],{149:function(e,a,c){},153:function(e,a,c){"use strict";c.r(a);var n=c(1),r=c.n(n);c(149);a.default=function(){return r.a.createElement("div",{className:"err"},"Niew\u0142a\u015bciwy url")}}}]);
-//# sourceMappingURL=4.1d365a1f.chunk.js.map
