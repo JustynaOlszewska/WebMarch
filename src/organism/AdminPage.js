@@ -3,8 +3,8 @@ import { Route, Redirect} from 'react-router-dom';
 import './Login.js';
 import { BASIC_URL } from "../constants";
 import { PATH_ROUTER } from "../constants";
+import { permission } from "../utility"
 
-const permission = true;
  
 class AdminPage extends Component {
     state = { 

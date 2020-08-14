@@ -2,19 +2,19 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import { PATH_ROUTER } from "../constants";
 
-const Header = (props) => {
+const Header = ({sentence, listInHead,element}) => {
     return ( 
         <header className="header">
         <div className="logo">   
-        <div className="logo__text">{props.sentence}</div>
+        <div className="logo__text">{sentence}</div>
         </div>       
 <nav className="navigation">
     <ul className="list">    
-        {props.listInHead}
+        {listInHead}
     </ul>
 </nav>     
  <div className="element">
-<Link to={PATH_ROUTER.main}>{props.element}</Link>
+<Link to={PATH_ROUTER.main}>{element}</Link>
 </div>  
 </header>
      );
