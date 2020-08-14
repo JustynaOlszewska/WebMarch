@@ -5,7 +5,7 @@ import Header from '../templates/Header'
 import Curtain from '../organism/Curtain'
 import { withRouter, Link } from "react-router-dom";
 // import TimelineMax from 'gsap/TimelineMax';
-import {TimelineMax} from 'react-gsap/node_modules/gsap';
+import { TimelineMax } from 'react-gsap/node_modules/gsap';
 
 import 'gsap/CSSPlugin';
 import '../style/sass/_curtain.scss';
@@ -124,6 +124,7 @@ const WebsiteManagement = () => {
 
         )
     })
+
     let number = 0.1;
     let thumbMinSize = 20;
     let renderByPixels = true;
