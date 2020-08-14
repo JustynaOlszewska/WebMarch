@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Redirect} from 'react-router-dom';
 import './Login.js';
+import { BASIC_URL } from "../constants";
+import { PATH_ROUTER } from "../constants";
+
 const permission = true;
  
 class AdminPage extends Component {
@@ -8,7 +11,7 @@ class AdminPage extends Component {
         data: []
      }
     componentDidMount(){
-        fetch('https://randomuser.me/api/?results=40')
+        fetch(BASIC_URL)
       .then(response=> response.json())
       .then(data=> this.setState({data: data.results}))
 
@@ -32,7 +35,7 @@ class AdminPage extends Component {
         console.log(myData)
         return ( 
             <div className='listUsers'>
-    <Route render={()=>(permission ? myData : <Redirect to="/login"/> )}/>
+    <Route render={()=>(permission ? myData : <Redirect to={PATH_ROUTER.login} /> )}/>
     </div>
     )
     }

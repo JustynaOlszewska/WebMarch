@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { PATH_ROUTER } from "../constants";
+
 const showInformationVegetables = () => {
  
     return ( 
@@ -11,7 +13,7 @@ Description of the cultivation and care of vegetables:
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus eveniet exercitationem eligendi error distinctio, quas eos, adipisci modi officia ipsum perferendis veritatis nisi harum asperiores quod quam. Repudiandae, ipsam?
         </p>
         
-        <Link className="linkDescription" to="/garden">Go back to the previous page.</Link>
+        <Link className="linkDescription" to={PATH_ROUTER.garden}>Go back to the previous page.</Link>
         </>
 
 

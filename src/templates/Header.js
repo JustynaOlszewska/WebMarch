@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { PATH_ROUTER } from "../constants";
 
 const Header = (props) => {
     return ( 
@@ -13,7 +14,7 @@ const Header = (props) => {
     </ul>
 </nav>     
  <div className="element">
-<Link to="/">{props.element}</Link>
+<Link to={PATH_ROUTER.main}>{props.element}</Link>
 </div>  
 </header>
      );
