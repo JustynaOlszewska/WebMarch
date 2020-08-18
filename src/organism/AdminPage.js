@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
+import React, {useState, useEffect } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import './Login.js';
 import { BASIC_URL } from "../constants";
 import { PATH_ROUTER } from "../constants";
 import { permission } from "../utility"
 
+ 
 
-class AdminPage extends Component {
-    state = {
-        data: []
-    }
-    componentDidMount() {
-        fetch(BASIC_URL)
-            .then(response => response.json())
-            .then(data => this.setState({ data: data.results }))
+ const AdminPage = () => {
+    const [data, newdata] = useState([]) 
 
-    }
-    render() {
-
-        const myData = this.state.data.map(result => {
-            return (
+    useEffect(() =>{
+                fetch(BASIC_URL)
+                    .then(response => response.json())
+                    .then(data =>  newdata(data.results))     
+            },[])
+            const myData = data.map(result => {
+     return ( 
 
                 <figure className='dataUsers'>
                     <img className="dataUsers__image" src={result.picture.large} alt="whoReadAboutHealth" />
@@ -37,10 +34,11 @@ class AdminPage extends Component {
             <div className='listUsers'>
                 <Route render={() => (permission ? myData : <Redirect to={PATH_ROUTER.login} />)} />
             </div>
-        )
-    }
-}
 
-export default AdminPage;
+      );
+ }
+  
+ export default AdminPage;
+
 
 
