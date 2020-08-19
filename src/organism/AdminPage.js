@@ -5,7 +5,6 @@ import { BASIC_URL } from "../constants";
 import { PATH_ROUTER } from "../constants";
 import { permission } from "../utility"
 
- 
 
  const AdminPage = () => {
     const [data, newdata] = useState([]) 
@@ -29,7 +28,6 @@ import { permission } from "../utility"
             )
         })
 
-        console.log(myData)
         return (
             <div className='listUsers'>
                 <Route render={() => (permission ? myData : <Redirect to={PATH_ROUTER.login} />)} />
