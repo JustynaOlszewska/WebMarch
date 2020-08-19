@@ -13,11 +13,10 @@ import Main from './Main.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { aphorisms, mainList } from "../utility";
-
 import '../style/sass/_header.scss';
 
 
-const element = <FontAwesomeIcon className="icon" Growing at home icon={faTimes} />
+const element = <FontAwesomeIcon className="icon" icon={faTimes} />
 
 const WebsiteManagement = () => {
 

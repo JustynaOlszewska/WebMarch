@@ -13,11 +13,14 @@ import { permission } from "../utility"
                 fetch(BASIC_URL)
                     .then(response => response.json())
                     .then(data =>  newdata(data.results))     
+                    .catch((error) => {
+                        console.error('Error:', error);
+                      });
             },[])
-            const myData = data.map(result => {
+            const myData = data.map((result, index) => {
      return ( 
 
-                <figure className='dataUsers'>
+                <figure key= {index} className='dataUsers'>
                     <img className="dataUsers__image" src={result.picture.large} alt="whoReadAboutHealth" />
                     <figcaption className='dataUsers__name'>
                         {result.name.first} {result.name.last}

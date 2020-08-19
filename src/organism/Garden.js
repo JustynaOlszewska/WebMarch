@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import higherOrderComponent from "../HOC/higherOrderComponent"
 import { vegetables } from "../utility"
 import { PATH_ROUTER } from "../constants";
 
@@ -22,4 +21,4 @@ const Garden = () => {
        );
 }
 
-export default higherOrderComponent(Garden);
+export default Garden;
