@@ -5,12 +5,38 @@
 
 
 .header {
-  margin: {
-    top: 30px;
-  }
 
+  background: {
+    image: url('../../image/health-vegetables_1280.jpg');
+  }
+  background: {
+    repeat: no-repeat;
+  }
+  background-size: cover;
+  background: {
+    position: left top;
+  }
+  margin: {
+    top: 1px;
+  }
+  max: {
+    height: 100vh;
+  }
   display: flex;
   @include size;
+  animation: anim 10s ease 1s infinite alternate none;
+
+  @keyframes anim {
+    0% {
+      background-position: left top;
+      background-size: 100%;  
+    }
+
+    100% {
+      background-position: 0 13%;
+      background-size: 110%;   
+    }
+  }
 
   & .logo {
     width: 30vw;
@@ -30,6 +56,7 @@
         font: {
           size: 2rem;
         }
+
 
         margin: 0 5% 5% 5%;
       }
@@ -117,6 +144,11 @@
         &:nth-child(1) .list__a {
           background: {
             color: $red;
+            // color: #161C40;
+          }
+
+          margin: {
+            top: 5%;
           }
 
           color: $yellow;
@@ -138,6 +170,7 @@
             color: $yellow;
 
           }
+
           color: $blueDark;
         }
 
@@ -154,6 +187,7 @@
         &:nth-child(3) .list__a {
           background: {
             color: $red;
+            // color: #161C40;
           }
 
           color: $yellow;
@@ -223,10 +257,27 @@
     flex-direction: column;
     overflow-x: hidden;
     height: 80%;
+    background-image: url('../../image/health-vegetables_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     margin: {
       top: 10px;
       bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1441px) {
+    @keyframes anim {
+
+      0% {
+
+        background-position: left top;
+      }
+
+      100% {
+        background-position: 57% 0;
+      }
     }
   }
 

@@ -4,7 +4,7 @@ import { articles } from "../utility"
 
 
 const Home = () => {
- 
+
   const articlesList = articles.map(article => {
     return (
       <ul key={article.title} className="articleList">
@@ -19,7 +19,7 @@ const Home = () => {
       <h1 className="articleH">
         Several articles on health.</h1>
 
-      {articlesList}
+      {articlesList.length ? articlesList : <h1>I am sory, but we have nothing to show you</h1>}
 
     </div>
   );

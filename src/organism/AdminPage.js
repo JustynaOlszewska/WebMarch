@@ -14,7 +14,7 @@ import { permission } from "../utility"
                     .then(response => response.json())
                     .then(data =>  newdata(data.results))     
                     .catch((error) => {
-                        console.error('Error:', error);
+                        console.log('Error:', error);
                       });
             },[])
             const myData = data.map((result, index) => {

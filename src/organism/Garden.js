@@ -15,7 +15,7 @@ const Garden = () => {
               <div className="listStyle">
                      <h1 className="spanHead">Please select a vegetable from the list.</h1>
                      <ul className="vegetables">
-                            {newVegetables}
+                            {newVegetables.length ? newVegetables : <h1>Sorry, I will add some information about healthy eating soon.</h1>}
                      </ul>
               </div>
        );
