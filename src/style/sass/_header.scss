@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Special+Elite|Work+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Special+Elite|Work+Sans&display=swap');
 @import 'variables';
 @import 'mixin';
 
@@ -50,12 +50,16 @@
     width: 30vw;
 
     &__text {
-      color: white;
-
+      color: rgb(226, 182, 182);
+      text: {
+        shadow: 2px 0 $red;
+      }
       font: {
         size: 4rem;
+        // family: 'Special Elite', cursive;
+        weight: 800;
       }
-
+color: $yellow;
       margin: {
         left: 15%;
       }
@@ -128,7 +132,7 @@
           color: $blue;
 
           font: {
-            family: 'Special Elite', cursive;
+            // family: 'Special Elite', cursive;
             weight: 800;
             size: 2rem;
           }
@@ -243,13 +247,13 @@
 
   .element {
     width: 15vw;
-
+   
     & .icon {
       width: 50px;
       height: 50px;
-      color: white;
+      color: $yellow;
       transition: .7s;
-
+     
       &:hover {
         transform: rotate(360deg);
       }

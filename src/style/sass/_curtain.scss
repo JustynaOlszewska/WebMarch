@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixin';
+@import url('https://fonts.googleapis.com/css?family=Special+Elite|Work+Sans&display=swap');
 
 body {
     background-color: $yellow;
@@ -8,6 +9,7 @@ body {
     width: 100vw;
     overflow-x: hidden;
     position: relative;
+    font-family: 'Special Elite', cursive;
 
     .container {
         width: 100vw;
