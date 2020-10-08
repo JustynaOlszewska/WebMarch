@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "778e9619f0aed7bbd916a667ac34e237",
+    "revision": "3e2abc114989ca063fb6028b26825357",
     "url": "/WebMarch/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/css/4.ac40f72a.chunk.css"
   },
   {
-    "revision": "68aa94331b92da24f5cb",
-    "url": "/WebMarch/static/css/5.034ea135.chunk.css"
+    "revision": "ba4883755bc16469bd60",
+    "url": "/WebMarch/static/css/5.c9788f96.chunk.css"
   },
   {
     "revision": "a8b7c2bc038b149fd7f5",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/css/7.5f5c0b9c.chunk.css"
   },
   {
-    "revision": "75078acf23a35a4aa11d",
-    "url": "/WebMarch/static/css/main.fcb4cd18.chunk.css"
+    "revision": "cac1f701d12c394d20d8",
+    "url": "/WebMarch/static/css/main.2ae8332b.chunk.css"
   },
   {
     "revision": "1dacccb1548ffba39d47",
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/js/4.292cfa14.chunk.js"
   },
   {
-    "revision": "68aa94331b92da24f5cb",
+    "revision": "ba4883755bc16469bd60",
     "url": "/WebMarch/static/js/5.e5a86c3a.chunk.js"
   },
   {
@@ -64,12 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/js/9.b2b5151c.chunk.js"
   },
   {
-    "revision": "75078acf23a35a4aa11d",
+    "revision": "cac1f701d12c394d20d8",
     "url": "/WebMarch/static/js/main.8c797ffd.chunk.js"
   },
   {
-    "revision": "1a9bbbc205d778d0a4b4",
-    "url": "/WebMarch/static/js/runtime-main.582e3636.js"
+    "revision": "7647d8f553d4553ca465",
+    "url": "/WebMarch/static/js/runtime-main.6aac538a.js"
   },
   {
     "revision": "014696af6ff310585a9ae25977bedf4d",
