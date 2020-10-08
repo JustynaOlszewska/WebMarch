@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WebMarch/static/css/main.6ccb5ffe.chunk.css",
+    "main.css": "/WebMarch/static/css/main.fcb4cd18.chunk.css",
     "main.js": "/WebMarch/static/js/main.8c797ffd.chunk.js",
     "main.js.map": "/WebMarch/static/js/main.8c797ffd.chunk.js.map",
     "runtime-main.js": "/WebMarch/static/js/runtime-main.582e3636.js",
@@ -27,21 +27,21 @@
     "static/js/9.b2b5151c.chunk.js": "/WebMarch/static/js/9.b2b5151c.chunk.js",
     "static/js/9.b2b5151c.chunk.js.map": "/WebMarch/static/js/9.b2b5151c.chunk.js.map",
     "index.html": "/WebMarch/index.html",
-    "precache-manifest.74e54a5f98e1fa5d961e6f3a74b972ad.js": "/WebMarch/precache-manifest.74e54a5f98e1fa5d961e6f3a74b972ad.js",
+    "precache-manifest.9923954efb150c49410a1da1d3cf4beb.js": "/WebMarch/precache-manifest.9923954efb150c49410a1da1d3cf4beb.js",
     "service-worker.js": "/WebMarch/service-worker.js",
     "static/css/3.b8492a67.chunk.css.map": "/WebMarch/static/css/3.b8492a67.chunk.css.map",
     "static/css/4.ac40f72a.chunk.css.map": "/WebMarch/static/css/4.ac40f72a.chunk.css.map",
     "static/css/5.034ea135.chunk.css.map": "/WebMarch/static/css/5.034ea135.chunk.css.map",
     "static/css/6.b8492a67.chunk.css.map": "/WebMarch/static/css/6.b8492a67.chunk.css.map",
     "static/css/7.5f5c0b9c.chunk.css.map": "/WebMarch/static/css/7.5f5c0b9c.chunk.css.map",
-    "static/css/main.6ccb5ffe.chunk.css.map": "/WebMarch/static/css/main.6ccb5ffe.chunk.css.map",
+    "static/css/main.fcb4cd18.chunk.css.map": "/WebMarch/static/css/main.fcb4cd18.chunk.css.map",
     "static/js/2.6a76af61.chunk.js.LICENSE.txt": "/WebMarch/static/js/2.6a76af61.chunk.js.LICENSE.txt",
     "static/media/all.scss": "/WebMarch/static/media/health-vegetables_640.30ebb344.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.582e3636.js",
     "static/js/2.6a76af61.chunk.js",
-    "static/css/main.6ccb5ffe.chunk.css",
+    "static/css/main.fcb4cd18.chunk.css",
     "static/js/main.8c797ffd.chunk.js"
   ]
 }
