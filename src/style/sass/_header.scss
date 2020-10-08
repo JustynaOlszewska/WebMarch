@@ -9,19 +9,25 @@
   background: {
     image: url('../../image/health-vegetables_1280.jpg');
   }
+
   background: {
     repeat: no-repeat;
   }
+
   background-size: cover;
+
   background: {
     position: left top;
   }
+
   margin: {
     top: 1px;
   }
+
   max: {
     height: 100vh;
   }
+
   display: flex;
   @include size;
   animation: anim 10s ease 1s infinite alternate none;
@@ -29,14 +35,16 @@
   @keyframes anim {
     0% {
       background-position: left top;
-      background-size: 100%;  
+      background-size: 100%;
     }
 
     100% {
       background-position: 0 13%;
-      background-size: 110%;   
+      background-size: 110%;
     }
   }
+
+
 
   & .logo {
     width: 30vw;
@@ -128,7 +136,9 @@
           @media (max-width: 823px) {
             font: {
               size: 1rem;
-            };
+            }
+
+            ;
 
             padding: 15px 35px 15px 35px;
           }
@@ -281,9 +291,23 @@
     }
   }
 
+  @media(min-width: 1120px)and (max-width: 1440px) {
+
+    @keyframes anim {
+      0% {
+        background-position: left top;
+        background-size: 100%;
+      }
+
+      100% {
+        background-position: 0 23%;
+        background-size: 107%;
+      }
+    }
+  }
+
   @media (orientation: landscape) and (max-width: 1025px) {
 
-    // height: 130%;
     min: {
       height: 140vh;
     }
