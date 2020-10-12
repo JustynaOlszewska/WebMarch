@@ -4,7 +4,6 @@ import Scrollbar from 'react-smooth-scrollbar';
 import Header from '../templates/Header'
 import Curtain from '../organism/Curtain'
 import { withRouter, Link } from "react-router-dom";
-// import TimelineMax from 'gsap/TimelineMax';
 import { TimelineMax } from 'react-gsap/node_modules/gsap';
 
 import 'gsap/CSSPlugin';
@@ -20,71 +19,87 @@ const element = <FontAwesomeIcon className="icon" icon={faTimes} />
 
 const WebsiteManagement = () => {
 
-    const myRef = React.createRef()
+
+    const myRef = React.createRef();
+    const myHead = React.useRef();
+
 
     WebsiteManagement.handleClick = (e) => {
+        const image = window.getComputedStyle(myHead.current).getPropertyValue("background-image");
+        const imagePositionX = window.getComputedStyle(myHead.current).getPropertyValue("background-position-x");
 
-        var tl = new TimelineMax();
+        const imagePositionY = window.getComputedStyle(myHead.current).getPropertyValue("background-position-y");
+
+        const imageSize = window.getComputedStyle(myHead.current).getPropertyValue("background-size"); var tl = new TimelineMax();
+
         tl.to('.scrollbar-track', 0, {
             height: 0,
         })
+
+
+
         tl.to('.slide', 0, {
-            width: '200vw',
-            display: 'block',
+            width: '100vw',
+            height: '100vw',
+            display: 'flex',
             tranform: 'scale(1)',
             top: 0,
-            left: '-15vw',
+            left: 0,
         })
-
-        tl.to('.one', 2.00, {
+        tl.set(".one", { backgroundImage: image, backgroundPositionX: imagePositionX, backgroundPositionY: imagePositionY, backgroundSize: imageSize, borderRadius: '0 0 0 0', });
+        tl.set(".two", { borderRadius: '0 0 0 0', display: 'none' });
+        tl.set(".three", { borderRadius: '0 0 0 0', display: 'none' });
+        tl.to('.one', 3.00, {
             scale: 1,
-            top: 0,
-            left: '-15vw',
             transformOrigin: '0% 40%',
-            borderRadius: '100%',
+            borderRadius: '100% 0 0 0',
+            top: 0,
+            left: 0,
             display: 'block',
         });
 
-        tl.to('.one', 2.00, {
+        tl.to('.one', 3.00, {
             scale: 1,
             top: '200vh',
-            left: '-7vw',
-            borderRadius: '0%',
+            borderRadius: '150% 1% 0 0 ',
             display: 'none',
         }, '-=1.5');
-        tl.to('.two', 2.0, {
+
+        tl.to('.two', 3.0, {
             duration: 0,
             scale: 1,
             top: 0,
-            left: '-15vw',
+            left: 0,
             transformOrigin: '0% 40%',
-            borderRadius: '100%',
-            display: 'block',
-        }, '-=2.5');
-
-        tl.to('.two', 2.55, {
-            scale: 1,
-            top: '200vh',
-            left: '-7vw',
-            borderRadius: '0%',
-            display: 'none',
-        }, '-=2.0');
-        tl.to('.three', 2.00, {
-            scale: 1,
-            top: 0,
-            left: '-15vw',
-            transformOrigin: '0% 40%',
-            borderRadius: '100%',
+            borderRadius: '100% 0 0 0',
             display: 'block',
         }, '-=3.5');
-
-        tl.to('.three', 2.90, {
+        tl.to('.two', 3.55, {
             scale: 1,
             top: '200vh',
-            left: '-7vw',
-            borderRadius: '0%',
+            left: 0,
+            borderRadius: '150% 1% 0 0 ',
+
             display: 'none',
-        }, '-=2.5');
+        }, '-=3.0');
+
+        tl.to('.three', 3.00, {
+            scale: 1,
+            top: 0,
+            left: 0,
+            transformOrigin: '0% 40%',
+            borderRadius: '100% 0 0 0',
+            display: 'block',
+        }, '-=4.5');
+
+        tl.to('.three', 3.90, {
+            scale: 1,
+            top: '200vh',
+            left: 0,
+            borderRadius: '150% 1% 0 0 ',
+
+            display: 'none',
+        }, '-=3.5');
         tl.to('.scrollbar-track', 0, {
             height: 0,
         })
@@ -138,9 +153,9 @@ const WebsiteManagement = () => {
             onKeyDown={WebsiteManagement.handleKeyDown}
             ref={myRef}
         >
-            <Curtain />
+            <Curtain listInHead={ListInHead} element={element} sentence={sentence} />
             <div className="wrapper">
-                <Header listInHead={ListInHead} element={element} sentence={sentence} />
+                <Header myHead={myHead} listInHead={ListInHead} element={element} sentence={sentence} />
 
                 <Main className="toMain" />
             </div>
