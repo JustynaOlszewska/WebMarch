@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f839a031fbbdf1e1b20e20689f99bbbb",
+    "revision": "0a6ecf1f8b423c67bfca791db380491e",
     "url": "/WebMarch/index.html"
   },
   {
@@ -24,16 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/css/7.5f5c0b9c.chunk.css"
   },
   {
-    "revision": "d5c153e9573756f59fbb",
-    "url": "/WebMarch/static/css/main.9fe424ee.chunk.css"
+    "revision": "f55b3e0721df5065010f",
+    "url": "/WebMarch/static/css/main.0a10b3f1.chunk.css"
   },
   {
-    "revision": "1dacccb1548ffba39d47",
-    "url": "/WebMarch/static/js/2.6a76af61.chunk.js"
+    "revision": "a20103394b20646005bc",
+    "url": "/WebMarch/static/js/2.2a620775.chunk.js"
   },
   {
     "revision": "0e071ddd7b22c2a2af5e99e5cf838646",
-    "url": "/WebMarch/static/js/2.6a76af61.chunk.js.LICENSE.txt"
+    "url": "/WebMarch/static/js/2.2a620775.chunk.js.LICENSE.txt"
   },
   {
     "revision": "4a97b0d0884dbd07b93d",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WebMarch/static/js/9.b2b5151c.chunk.js"
   },
   {
-    "revision": "d5c153e9573756f59fbb",
-    "url": "/WebMarch/static/js/main.8c797ffd.chunk.js"
+    "revision": "f55b3e0721df5065010f",
+    "url": "/WebMarch/static/js/main.59629d8f.chunk.js"
   },
   {
     "revision": "7647d8f553d4553ca465",
