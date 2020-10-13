@@ -233,8 +233,15 @@ body {
                 }
               }
 
+<<<<<<< HEAD
               &:nth-child(4) .list__a {
                 background-color: $blueDark;
+=======
+                .element {
+                    width: 15vw;
+                    height: 100vh;
+                    left: 85%;
+>>>>>>> d690a049a52930b908c25ff90873ad194c36102e
 
               }
 
@@ -344,5 +351,9 @@ body {
         @include position($top: 10px, $left: 10px)
       }
     }
+<<<<<<< HEAD
   }
 }
+=======
+}
+>>>>>>> d690a049a52930b908c25ff90873ad194c36102e
