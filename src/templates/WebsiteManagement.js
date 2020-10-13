@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Scrollbar from 'react-smooth-scrollbar';
 import Header from '../templates/Header'
@@ -24,7 +23,7 @@ const WebsiteManagement = () => {
     const myHead = React.useRef();
 
 
-    WebsiteManagement.handleClick = (e) => {
+    const handleClick = (e) => {
         const image = window.getComputedStyle(myHead.current).getPropertyValue("background-image");
         const imagePositionX = window.getComputedStyle(myHead.current).getPropertyValue("background-position-x");
 
@@ -46,9 +45,11 @@ const WebsiteManagement = () => {
             top: 0,
             left: 0,
         })
-        tl.set(".one", { backgroundImage: image, backgroundPositionX: imagePositionX, backgroundPositionY: imagePositionY, backgroundSize: imageSize, borderRadius: '0 0 0 0', });
-        tl.set(".two", { borderRadius: '0 0 0 0', display: 'none' });
-        tl.set(".three", { borderRadius: '0 0 0 0', display: 'none' });
+        tl.set(".one", {
+            backgroundImage: image, backgroundPositionX: imagePositionX, backgroundPositionY: imagePositionY, backgroundSize: imageSize, borderRadius: '0 0 0 0', display: 'block',
+        });
+        tl.set(".two", { borderRadius: '0 0 0 0' });
+        tl.set(".three", { borderRadius: '0 0 0 0' });
         tl.to('.one', 3.00, {
             scale: 1,
             transformOrigin: '0% 40%',
@@ -61,7 +62,7 @@ const WebsiteManagement = () => {
         tl.to('.one', 3.00, {
             scale: 1,
             top: '200vh',
-            borderRadius: '150% 1% 0 0 ',
+            borderRadius: '20% 1% 0 0 ',
             display: 'none',
         }, '-=1.5');
 
@@ -78,7 +79,7 @@ const WebsiteManagement = () => {
             scale: 1,
             top: '200vh',
             left: 0,
-            borderRadius: '150% 1% 0 0 ',
+            borderRadius: '20% 1% 0 0 ',
 
             display: 'none',
         }, '-=3.0');
@@ -96,7 +97,7 @@ const WebsiteManagement = () => {
             scale: 1,
             top: '200vh',
             left: 0,
-            borderRadius: '150% 1% 0 0 ',
+            borderRadius: '20% 1% 0 0 ',
 
             display: 'none',
         }, '-=3.5');
@@ -106,7 +107,7 @@ const WebsiteManagement = () => {
 
     }
 
-    WebsiteManagement.handleKeyDown = (e) => {
+    const handleKeyDown = (e) => {
 
 
         if (e.keyCode === 40) {
@@ -133,7 +134,7 @@ const WebsiteManagement = () => {
 
         return (
 
-            <li key={list.id} onClick={WebsiteManagement.handleClick} className="list__element"><Link className="list__a" to={list.to}>{list.name}</Link></li>
+            <li key={list.id} onClick={handleClick} className="list__element"><Link className="list__a" to={list.to}>{list.name}</Link></li>
 
         )
     })
@@ -150,7 +151,7 @@ const WebsiteManagement = () => {
             thumbMinSize={thumbMinSize}
             renderByPixels={renderByPixels}
             alwaysShowTracks={alwaysShowTracks}
-            onKeyDown={WebsiteManagement.handleKeyDown}
+            onKeyDown={handleKeyDown}
             ref={myRef}
         >
             <Curtain listInHead={ListInHead} element={element} sentence={sentence} />
