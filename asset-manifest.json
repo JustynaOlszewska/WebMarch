@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/WebMarch/static/css/main.0a10b3f1.chunk.css",
-    "main.js": "/WebMarch/static/js/main.59629d8f.chunk.js",
-    "main.js.map": "/WebMarch/static/js/main.59629d8f.chunk.js.map",
+    "main.css": "/WebMarch/static/css/main.872dbf4f.chunk.css",
+    "main.js": "/WebMarch/static/js/main.02d9ef3e.chunk.js",
+    "main.js.map": "/WebMarch/static/js/main.02d9ef3e.chunk.js.map",
     "runtime-main.js": "/WebMarch/static/js/runtime-main.6aac538a.js",
     "runtime-main.js.map": "/WebMarch/static/js/runtime-main.6aac538a.js.map",
     "static/js/2.2a620775.chunk.js": "/WebMarch/static/js/2.2a620775.chunk.js",
@@ -27,21 +27,21 @@
     "static/js/9.b2b5151c.chunk.js": "/WebMarch/static/js/9.b2b5151c.chunk.js",
     "static/js/9.b2b5151c.chunk.js.map": "/WebMarch/static/js/9.b2b5151c.chunk.js.map",
     "index.html": "/WebMarch/index.html",
-    "precache-manifest.cb598248144fdacb1afc79de147a058d.js": "/WebMarch/precache-manifest.cb598248144fdacb1afc79de147a058d.js",
+    "precache-manifest.1fe584f60b74713baa6a29d59efee2c4.js": "/WebMarch/precache-manifest.1fe584f60b74713baa6a29d59efee2c4.js",
     "service-worker.js": "/WebMarch/service-worker.js",
     "static/css/3.b8492a67.chunk.css.map": "/WebMarch/static/css/3.b8492a67.chunk.css.map",
     "static/css/4.ac40f72a.chunk.css.map": "/WebMarch/static/css/4.ac40f72a.chunk.css.map",
     "static/css/5.c9788f96.chunk.css.map": "/WebMarch/static/css/5.c9788f96.chunk.css.map",
     "static/css/6.b8492a67.chunk.css.map": "/WebMarch/static/css/6.b8492a67.chunk.css.map",
     "static/css/7.5f5c0b9c.chunk.css.map": "/WebMarch/static/css/7.5f5c0b9c.chunk.css.map",
-    "static/css/main.0a10b3f1.chunk.css.map": "/WebMarch/static/css/main.0a10b3f1.chunk.css.map",
+    "static/css/main.872dbf4f.chunk.css.map": "/WebMarch/static/css/main.872dbf4f.chunk.css.map",
     "static/js/2.2a620775.chunk.js.LICENSE.txt": "/WebMarch/static/js/2.2a620775.chunk.js.LICENSE.txt",
     "static/media/all.scss": "/WebMarch/static/media/health-vegetables_640.30ebb344.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6aac538a.js",
     "static/js/2.2a620775.chunk.js",
-    "static/css/main.0a10b3f1.chunk.css",
-    "static/js/main.59629d8f.chunk.js"
+    "static/css/main.872dbf4f.chunk.css",
+    "static/js/main.02d9ef3e.chunk.js"
   ]
 }
