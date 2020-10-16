@@ -130,17 +130,24 @@ const WebsiteManagement = () => {
     };
 
     const handleKeyDown = (event) => {
-        if (event.keyCode === 40) {
-            myRef.current.scrollbar.scrollTop = 625 + 3 * 100;
-        } else if (event.keyCode === 38) {
-            myRef.current.scrollbar.scrollTop = 0;
-        } else if (event.keyCode === 39) {
-            myRef.current.scrollbar.scrollLeft = 0;
 
-            if (myRef.current.scrollbar.scrollLeft === 0) {
-                myRef.current.scrollbar.options.damping = 1;
-                myRef.current.scrollbar.options.alwaysShowTracksX = false;
-            }
+        switch (event.keyCode) {
+            case 40:
+                myRef.current.scrollbar.scrollTop = 625 + 3 * 100;
+                break;
+            case 38:
+                myRef.current.scrollbar.scrollTop = 0;
+                break;
+            case 39:
+                myRef.current.scrollbar.scrollLeft = 0;
+
+                if (myRef.current.scrollbar.scrollLeft === 0) {
+                    myRef.current.scrollbar.options.damping = 1;
+                    myRef.current.scrollbar.options.alwaysShowTracksX = false;
+                }
+                break;
+            default:
+                return
         }
     };
 
