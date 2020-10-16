@@ -1,10 +1,10 @@
 import React from "react";
 import CurtainHeader from "./CurtainHeader";
 
-const Header = ({ myHead, sentence, listInHead, element }) => {
+const Header = ({ myHead, sentence, listInHead, icon }) => {
   return (
     <header ref={myHead} className="header">
-      <CurtainHeader element={element} listInHead={listInHead} sentence={sentence} />
+      <CurtainHeader icon={icon} listInHead={listInHead} sentence={sentence} />
     </header>
   );
 };

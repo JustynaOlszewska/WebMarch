@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { PATH_ROUTER } from "../constants";
 import PropTypes from "prop-types";
 
-const CurtainHeader = ({ sentence, listInHead, element }) => {
+const CurtainHeader = ({ sentence, listInHead, icon }) => {
   return (
     <>
       <div className="logo">
@@ -13,7 +13,7 @@ const CurtainHeader = ({ sentence, listInHead, element }) => {
         <ul className="list">{listInHead}</ul>
       </nav>
       <div className="element">
-        <Link to={PATH_ROUTER.main}>{element}</Link>
+        <Link to={PATH_ROUTER.main}>{icon}</Link>
       </div>
     </>
   );
