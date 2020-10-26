@@ -1,0 +1,1 @@
+{"version":3,"sources":["organism/Err.js"],"names":["Err","className"],"mappings":"sHAAA,kCAMeA,UAJH,WACV,OAAO,yBAAKC,UAAU,OAAf","file":"static/js/4.361681eb.chunk.js","sourcesContent":["import React from \"react\";\nimport \"../style/sass/_err.scss\";\nconst Err = () => {\n  return <div className=\"err\">Niewłaściwy url</div>;\n};\n\nexport default Err;\n"],"sourceRoot":""}
