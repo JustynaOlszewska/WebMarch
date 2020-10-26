@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import CurtainHeader from "../templates/CurtainHeader";
 const Curtain = ({ sentence, listInHead, icon }) => {
@@ -12,5 +13,9 @@ const Curtain = ({ sentence, listInHead, icon }) => {
     </div>
   );
 };
-
+Curtain.propTypes = {
+  sentence: PropTypes.string.isRequired,
+  listInHead: PropTypes.array.isRequired,
+  icon: PropTypes.object.isRequired,
+};
 export default Curtain;

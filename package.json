@@ -28,10 +28,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "lint": "eslint --fix **/*.js --ignore-pattern node_modules/"
   },
   "browserslist": {
     "production": [
@@ -45,7 +43,17 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format"
+    }
+  },
   "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.14.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "gh-pages": "^2.2.0",
     "husky": "^4.3.0",
     "prettier": "^2.1.2"

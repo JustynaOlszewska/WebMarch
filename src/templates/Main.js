@@ -13,7 +13,6 @@ const showInformationVegetables = lazy(() =>
   import("../organism/showInformationVegetables.js")
 );
 const AdminPage = lazy(() => import("../organism/AdminPage.js"));
-
 const Main = () => {
   return (
     <main className="main">

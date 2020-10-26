@@ -21,7 +21,7 @@ const CurtainHeader = ({ sentence, listInHead, icon }) => {
 CurtainHeader.propTypes = {
   sentence: PropTypes.string.isRequired,
   listInHead: PropTypes.array.isRequired,
-  element: PropTypes.object.isRequired,
+  icon: PropTypes.object.isRequired,
 };
 
 export default CurtainHeader;

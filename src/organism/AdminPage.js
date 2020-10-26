@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Route, Redirect } from "react-router-dom";
 import "./Login.js";
-import { BASIC_URL } from "../constants";
-import { PATH_ROUTER } from "../constants";
+import { BASIC_URL, PATH_ROUTER } from "../constants";
 import { permission } from "../utility";
 
 const AdminPage = () => {

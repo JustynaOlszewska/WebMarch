@@ -18,8 +18,7 @@ const icon = <FontAwesomeIcon className="icon" icon={faTimes} />;
 const WebsiteManagement = () => {
   const myRef = React.createRef();
   const myHead = React.useRef();
-
-  const handleClick = (e) => {
+  const handleClick = () => {
     const tl = new TimelineMax();
 
     tl.to(".scrollbar-track", 0, {
@@ -149,7 +148,6 @@ const WebsiteManagement = () => {
         return;
     }
   };
-
   const index = Math.floor(Math.random() * aphorisms.length);
   const sentence = aphorisms[index];
   const ListInHead = mainList.map((list) => {
