@@ -1,15 +1,14 @@
-import React, { Component } from "react";
-import WebsiteManagement from "../templates/websiteManagement/WebsiteManagement";
+import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <WebsiteManagement />
-      </Router>
-    );
-  }
-}
+import WebsiteManagement from "../templates/websiteManagement/WebsiteManagement";
+
+const App = () => {
+  return (
+    <Router>
+      <WebsiteManagement />
+    </Router>
+  );
+};
 
 export default App;

@@ -1,11 +1,17 @@
 import React from "react";
 
-const Loading = () => {
-  return (
-    <div>
-      <h1>Loading...</h1>
-    </div>
-  );
-};
+import { makeStyles } from "@material-ui/core/styles";
 
+import CircularProgress from "@material-ui/core/CircularProgress";
+
+const useStyles = makeStyles({
+  preloader: {
+    color: "green",
+  },
+});
+
+const Loading = () => {
+  const classes = useStyles();
+  return <CircularProgress color="secondary" className={classes.preloader} />;
+};
 export default Loading;
