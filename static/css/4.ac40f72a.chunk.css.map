@@ -1,1 +1,0 @@
-{"version":3,"sources":["_err.scss"],"names":[],"mappings":"AAAA,KACI,iBAAkB,CAClB,cAAe,CACf,SAAU","file":"4.ac40f72a.chunk.css","sourcesContent":[".err {\r\n    text-align: center;\r\n    font-size: 4rem;\r\n    color: red;\r\n}"]}
