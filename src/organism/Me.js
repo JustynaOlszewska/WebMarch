@@ -1,85 +1,49 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Prompt } from "react-router-dom";
 import "../style/sass/_me.scss";
 
-class Me extends Component {
-  state = {
-    textarea: "",
-    errors: {
-      textarea: false,
-    },
-    message: "",
-  };
-  message = {
-    textarea__incorrect:
-      "The message cannot be shorter than 10 characters and cannot contain @",
-  };
-  handleSubmit = (e) => {
+const Me = () => {
+  const [textarea, setTextArea] = useState("");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e) {
     e.preventDefault();
-
-    const validation = this.formValidation();
-
-    if (validation.textarea) {
-      this.setState({
-        textarea: "",
-        errors: {
-          textarea: false,
-        },
-        message: "form sent",
-      });
-    } else {
-      this.setState({
-        textarea: "",
-        errors: {
-          textarea: false,
-        },
-        message: this.message.textarea__incorrect,
-      });
-    }
-  };
-
-  handletextareaChange = (e) => {
-    this.setState({
-      textarea: e.target.value,
-    });
-  };
-  formValidation = () => {
-    let textarea = false;
-
-    if (this.state.textarea.length > 10 && this.state.textarea.indexOf("@") === -1) {
-      textarea = true;
-    }
-
-    return {
-      textarea,
-    };
-  };
-  render() {
-    return (
-      <div className="me">
-        <h1 className="hMe">Write a message:</h1>
-        {this.state.message}
-        {this.state.errors.textarea && (
-          <span>{this.message.textarea__incorrect}</span>
-        )}
-        <form onSubmit={this.handleSubmit} className="formMe" noValidate>
-          <textarea
-            onChange={this.handletextareaChange}
-            className="formMe__textarea"
-            placeholder="Write here."
-            value={this.state.textarea}
-          ></textarea>
-          <button className="formMe__button" type="submit">
-            Send a message
-          </button>
-        </form>
-        <Prompt
-          when={this.state.textarea ? true : false}
-          message="You haven't sent the form."
-        />
-      </div>
-    );
+    formValidation();
+    setTextArea("");
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
   }
-}
+
+  const handleTextAreaChange = (e) => {
+    setMessage("");
+    setTextArea(e.target.value);
+  };
+  const formValidation = () => {
+    textarea.length > 10 && textarea.indexOf("@") === -1
+      ? setMessage("Form sent")
+      : setMessage(
+          "The message cannot be shorter than 10 characters and cannot contain @"
+        );
+  };
+  return (
+    <div className="me">
+      <h1 className="hMe">Write a message:</h1>
+      {message && <span>{message}</span>}
+      <form onSubmit={handleSubmit} className="formMe" noValidate>
+        <textarea
+          onChange={handleTextAreaChange}
+          className="formMe__textarea"
+          placeholder="Write here."
+          value={textarea}
+        />
+        <button className="formMe__button" type="submit">
+          Send a message
+        </button>
+      </form>
+      <Prompt when={textarea ? true : false} message="You haven't sent the form." />
+    </div>
+  );
+};
 
 export default Me;
