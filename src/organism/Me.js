@@ -6,14 +6,14 @@ const Me = () => {
   const [textarea, setTextArea] = useState("");
   const [message, setMessage] = useState("");
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     formValidation();
     setTextArea("");
     setTimeout(() => {
       setMessage("");
     }, 3000);
-  }
+  };
 
   const handleTextAreaChange = (e) => {
     setMessage("");

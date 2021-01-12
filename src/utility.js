@@ -18,8 +18,6 @@ export const articles = [
 
 export const vegetables = ["carrot", "cucumber", "potato"];
 
-export const permission = true;
-
 export const mainList = [
   { name: "Articles about health", id: 1, to: "/" },
   { name: "Backyard garden", id: 2, to: "/garden" },
