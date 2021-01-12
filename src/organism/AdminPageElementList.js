@@ -15,6 +15,6 @@ const AdminPageElementList = ({ result }) => {
   );
 };
 AdminPageElementList.propTypes = {
-  result: PropTypes.array.isRequired,
+  result: PropTypes.object.isRequired,
 };
 export default AdminPageElementList;
