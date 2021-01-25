@@ -1,20 +1,32 @@
 import React from "react";
+
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/black-and-white.css";
+
 import PropTypes from "prop-types";
+
 const AdminPageElementList = ({ result }) => {
+  const { first, last } = result.name;
+  const { large } = result.picture;
+
   return (
     <figure className="dataUsers">
-      <img
+      <LazyLoadImage
         className="dataUsers__image"
-        src={result.picture.large}
+        src={large}
+        placeholderSrc={large}
         alt="whoReadAboutHealth"
+        effect="black-and-white"
       />
       <figcaption className="dataUsers__name">
-        {result.name.first} {result.name.last}
+        {first} {last}
       </figcaption>
     </figure>
   );
 };
+
 AdminPageElementList.propTypes = {
   result: PropTypes.object.isRequired,
 };
+
 export default AdminPageElementList;

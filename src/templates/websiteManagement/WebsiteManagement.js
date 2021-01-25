@@ -18,6 +18,7 @@ const icon = <FontAwesomeIcon className="icon" icon={faTimes} />;
 const WebsiteManagement = () => {
   const myRef = React.createRef();
   const myHead = React.useRef();
+
   const handleClick = () => {
     const tl = new TimelineMax();
 
@@ -150,6 +151,7 @@ const WebsiteManagement = () => {
   };
   const index = Math.floor(Math.random() * aphorisms.length);
   const sentence = aphorisms[index];
+
   const ListInHead = mainList.map((list) => {
     return (
       <li key={list.id} onClick={handleClick} className="list__element">
