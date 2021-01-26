@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import CurtainHeader from "../templates/CurtainHeader";
-const Curtain = ({ sentence, icon, handleClick }) => {
+const Curtain = () => {
   return (
     <div className="container">
       <div className="slide one">
-        <CurtainHeader icon={icon} handleClick={handleClick} sentence={sentence} />
+        <CurtainHeader />
       </div>
       <div className="slide two"></div>
       <div className="slide three"></div>
@@ -14,8 +14,6 @@ const Curtain = ({ sentence, icon, handleClick }) => {
   );
 };
 Curtain.propTypes = {
-  sentence: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
 export default Curtain;

@@ -1,26 +1,19 @@
-import React from "react";
+import React, { useRef } from "react";
 import CurtainHeader from "./CurtainHeader";
 import PropTypes from "prop-types";
 
-const Header = ({ sentence, icon, handleClick }) => {
-  const myHead = React.useRef();
+const Header = () => {
+  const myHead = useRef();
 
   return (
     <header ref={myHead} className="header">
-      <CurtainHeader
-        myHead={myHead}
-        icon={icon}
-        handleClick={handleClick}
-        sentence={sentence}
-      />
+      <CurtainHeader myHead={myHead} />
     </header>
   );
 };
+
 Header.propTypes = {
-  myHead: PropTypes.object.isRequired,
-  sentence: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  handleClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func,
 };
 
 export default Header;

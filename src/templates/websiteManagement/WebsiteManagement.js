@@ -6,12 +6,7 @@ import { withRouter } from "react-router-dom";
 
 import "../../style/sass/_curtain.scss";
 import Main from "../Main.js";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { aphorisms } from "../../utility";
 import "../../style/sass/_header.scss";
-
-const icon = <FontAwesomeIcon className="icon" icon={faTimes} />;
 
 const WebsiteManagement = () => {
   const myRef = React.createRef();
@@ -36,8 +31,6 @@ const WebsiteManagement = () => {
         return;
     }
   };
-  const index = Math.floor(Math.random() * aphorisms.length);
-  const sentence = aphorisms[index];
 
   const number = 0.1;
   const thumbMinSize = 20;
@@ -53,9 +46,9 @@ const WebsiteManagement = () => {
       onKeyDown={handleKeyDown}
       ref={myRef}
     >
-      <Curtain icon={icon} sentence={sentence} />
+      <Curtain />
       <div className="wrapper">
-        <Header icon={icon} sentence={sentence} />
+        <Header />
 
         <Main className="toMain" />
       </div>

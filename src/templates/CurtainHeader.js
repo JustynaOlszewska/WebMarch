@@ -2,12 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { PATH_ROUTER } from "../constants";
 import PropTypes from "prop-types";
-import { mainList } from "../utility";
+import { mainList, aphorisms } from "../utility";
 import { TimelineMax } from "react-gsap/node_modules/gsap";
 import "gsap/CSSPlugin";
 import { position } from "./websiteManagement/position";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const CurtainHeader = ({ sentence, icon, myHead }) => {
+const icon = <FontAwesomeIcon className="icon" icon={faTimes} />;
+
+const CurtainHeader = ({ myHead }) => {
   const handleClick = () => {
     const tl = new TimelineMax();
 
@@ -117,7 +121,8 @@ const CurtainHeader = ({ sentence, icon, myHead }) => {
       height: 0,
     });
   };
-
+  const index = Math.floor(Math.random() * aphorisms.length);
+  const sentence = aphorisms[index];
   return (
     <>
       <div className="logo">
@@ -143,8 +148,6 @@ const CurtainHeader = ({ sentence, icon, myHead }) => {
   );
 };
 CurtainHeader.propTypes = {
-  sentence: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
   myHead: PropTypes.object,
 };
 

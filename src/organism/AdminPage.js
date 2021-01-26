@@ -12,13 +12,16 @@ const AdminPage = () => {
   const [permission, setPermission] = useState(true);
 
   useEffect(() => {
-    fetch(BASIC_URL)
-      .then((response) => response.json())
-      .then((data) => setData(data.results))
-      .catch((error) => {
-        setPermission(false);
-        throw new Error(error);
-      });
+    function fetchData() {
+      fetch(BASIC_URL)
+        .then((response) => response.json())
+        .then((data) => setData(data.results))
+        .catch((error) => {
+          setPermission(false);
+          // throw new Error(error);
+        });
+    }
+    fetchData();
   }, []);
 
   return (
@@ -30,8 +33,8 @@ const AdminPage = () => {
               <AdminPageElementList key={index} result={result} />
             ))
           ) : (
-            <Redirect to={PATH_ROUTER.login} />
-          )
+              <Redirect to={PATH_ROUTER.login} />
+            )
         }
       />
     </div>
