@@ -17,6 +17,7 @@ const AdminPageElementList = ({ result }) => {
         placeholderSrc={large}
         alt="whoReadAboutHealth"
         effect="black-and-white"
+        draggable={false}
       />
       <figcaption className="dataUsers__name">
         {first} {last}
