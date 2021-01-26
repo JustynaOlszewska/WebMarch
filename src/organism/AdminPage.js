@@ -18,7 +18,7 @@ const AdminPage = () => {
         .then((data) => setData(data.results))
         .catch((error) => {
           setPermission(false);
-          // throw new Error(error);
+          throw new Error(error);
         });
     }
     fetchData();
@@ -33,8 +33,8 @@ const AdminPage = () => {
               <AdminPageElementList key={index} result={result} />
             ))
           ) : (
-              <Redirect to={PATH_ROUTER.login} />
-            )
+            <Redirect to={PATH_ROUTER.login} />
+          )
         }
       />
     </div>
