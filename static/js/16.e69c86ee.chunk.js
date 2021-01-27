@@ -1,0 +1,2 @@
+(this.webpackJsonpmarch=this.webpackJsonpmarch||[]).push([[16],{186:function(e,a,t){"use strict";t.r(a);var n=t(0),r=t.n(n),c=Object(n.lazy)((function(){return Promise.all([t.e(0),t.e(1)]).then(t.bind(null,163))}));a.default=function(){var e=Object(n.useRef)();return r.a.createElement("header",{ref:e,className:"header"},r.a.createElement(c,{myHead:e}))}}}]);
+//# sourceMappingURL=16.e69c86ee.chunk.js.map

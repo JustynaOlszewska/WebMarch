@@ -1,0 +1,1 @@
+{"version":3,"sources":["_main.scss"],"names":[],"mappings":"AACA,MACI,UAAW,CACX,WAAY,CACZ,gBAAiB,CACjB,eAAiB,CACjB,eAAgB,CAChB,kBAAmB","file":"6.a6058a60.chunk.css","sourcesContent":["\r\n.main {\r\n    width: 100%;\r\n    height: 50vh;\r\n    max-height: 100vh;\r\n    font-size: 0.7rem;\r\n    margin-top: 10px;\r\n    margin-bottom: 10px;\r\n}"]}

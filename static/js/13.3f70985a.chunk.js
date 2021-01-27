@@ -1,0 +1,2 @@
+(this.webpackJsonpmarch=this.webpackJsonpmarch||[]).push([[13],{181:function(a,e,t){"use strict";t.r(e);var r=t(0),s=t.n(r),c=t(182);t(183);e.default=function(a){var e=a.result,t=e.name,r=t.first,l=t.last,n=e.picture.large;return s.a.createElement("figure",{className:"dataUsers"},s.a.createElement(c.LazyLoadImage,{className:"dataUsers__image",src:n,placeholderSrc:n,alt:"whoReadAboutHealth",effect:"black-and-white",draggable:!1}),s.a.createElement("figcaption",{className:"dataUsers__name"},r," ",l))}}}]);
+//# sourceMappingURL=13.3f70985a.chunk.js.map
