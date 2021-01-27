@@ -1,12 +1,15 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import Scrollbar from "react-smooth-scrollbar";
-import Header from "../../templates/Header";
-import Curtain from "../../organism/Curtain";
 import { withRouter } from "react-router-dom";
 
 import "../../style/sass/_curtain.scss";
-import Main from "../Main.js";
 import "../../style/sass/_header.scss";
+
+import Loading from "../../organism/Loading";
+
+const Header = lazy(() => import("../../templates/Header"));
+const Main = lazy(() => import("../Main.js"));
+const Curtain = lazy(() => import("../../organism/Curtain"));
 
 const WebsiteManagement = () => {
   const myRef = React.createRef();
@@ -38,21 +41,22 @@ const WebsiteManagement = () => {
   const alwaysShowTracks = true;
 
   return (
-    <Scrollbar
-      damping={number}
-      thumbMinSize={thumbMinSize}
-      renderByPixels={renderByPixels}
-      alwaysShowTracks={alwaysShowTracks}
-      onKeyDown={handleKeyDown}
-      ref={myRef}
-    >
-      <Curtain />
-      <div className="wrapper">
-        <Header />
-
-        <Main className="toMain" />
-      </div>
-    </Scrollbar>
+    <Suspense fallback={<Loading />}>
+      <Scrollbar
+        damping={number}
+        thumbMinSize={thumbMinSize}
+        renderByPixels={renderByPixels}
+        alwaysShowTracks={alwaysShowTracks}
+        onKeyDown={handleKeyDown}
+        ref={myRef}
+      >
+        <Curtain />
+        <div className="wrapper">
+          <Header />
+          <Main className="toMain" />
+        </div>
+      </Scrollbar>
+    </Suspense>
   );
 };
 

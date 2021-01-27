@@ -1,7 +1,8 @@
-import React from "react";
+import React, { lazy } from "react";
 import PropTypes from "prop-types";
 
-import CurtainHeader from "../templates/CurtainHeader";
+const CurtainHeader = lazy(() => import("../templates/CurtainHeader"));
+
 const Curtain = () => {
   return (
     <div className="container">

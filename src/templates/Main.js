@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import "../style/sass/_main.scss";
 import { PATH_ROUTER } from "../constants";
+
 import Loading from "../organism/Loading";
 
 const Home = lazy(() => import("../organism/Home.js"));

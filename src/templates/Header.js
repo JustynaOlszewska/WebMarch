@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
-import CurtainHeader from "./CurtainHeader";
+import React, { useRef, lazy } from "react";
+
 import PropTypes from "prop-types";
+
+const CurtainHeader = lazy(() => import("./CurtainHeader"));
 
 const Header = () => {
   const myHead = useRef();

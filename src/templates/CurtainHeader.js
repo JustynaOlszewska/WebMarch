@@ -11,7 +11,8 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const icon = <FontAwesomeIcon className="icon" icon={faTimes} />;
 
-const CurtainHeader = ({ myHead }) => {
+// eslint-disable-next-line react/display-name
+const CurtainHeader = React.memo(({ myHead }) => {
   const handleClick = () => {
     const tl = new TimelineMax();
 
@@ -146,7 +147,7 @@ const CurtainHeader = ({ myHead }) => {
       </div>
     </>
   );
-};
+});
 CurtainHeader.propTypes = {
   myHead: PropTypes.object,
 };
