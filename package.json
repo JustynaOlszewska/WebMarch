@@ -33,7 +33,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
-    "lint": "eslint --fix **/*.js --ignore-pattern node_modules/"
+    "lint": "eslint '**/*.{js,jsx}' --quiet"
   },
   "browserslist": {
     "production": [
